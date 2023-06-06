@@ -5,7 +5,7 @@
         <section class="h-screen flex flex-col items-center justify-center w-full">
           <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
             <video
-              src="video/sunflower.mp4"
+              src="/video/sunflower.mp4"
               autoplay
               muted
               loop
