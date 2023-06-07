@@ -34,7 +34,7 @@
   </template>
   <script setup>
   import { onClickOutside } from "@vueuse/core";
-  import {ref} from "vue";
+  import {onMounted, ref} from "vue";
   const props = defineProps({
     images: {
       type: Array,
@@ -54,13 +54,13 @@
   const obtenerSrcImagen = (index) =>{
     if(imagen.value){
       modal.value = true
-      srcImagen.value = imagen.value[index].$el.getAttribute('src').slice(8);
+      srcImagen.value = imagen.value[index].getAttribute('src');
     }
   }
   </script>
   <style scoped>
   .image--list {
-    @apply min-w-full gap-5 px-5 columns-2 lg:px-10 lg:columns-3;
+    @apply min-w-full gap-5 px-5 py-10 columns-2 lg:px-10 lg:columns-3;
   }
   .item {
     @apply relative w-full;

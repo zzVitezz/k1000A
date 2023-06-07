@@ -5,16 +5,11 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <main class="main bg-lime-200">
-      <div
-        class="px-5 py-10 text-center text-xl font-bold lg:text-3xl lg:py-20"
-      >
-        Rosita 🐹
-      </div>
       <button
         class="bg-amber-600 text-white rounded-full flex items-center p-2 z-10 fixed bottom-5 right-5 lg:bottom-10 lg:right-12 lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-red-500 lg:duration-200"
         @click="modal = true"
       >
-        <span class="material-symbols-outlined">menu</span>
+        <span class="material-symbols-outlined" style="font-size: 30px;">menu</span>
       </button>
       <Teleport to="body">
         <div

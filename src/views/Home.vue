@@ -12,7 +12,7 @@
               class="absolute min-h-full min-w-full object-cover"
             ></video>
           </div>
-          <div class="absolute h-full w-full absolute top-0 left-0 bg-black bg-opacity-30"></div>
+          <div class="absolute h-full w-full absolute top-0 left-0 bg-black bg-opacity-40"></div>
           <div class="z-0 flex flex-col items-center">
             <div class="text-xl text-white flex lg:text-5xl">Feliz Cumpleaños</div>
             <span class="text-sm text-white mt-5">Más de 1 año juntos</span>
