@@ -25,18 +25,12 @@
           <div class="text-sm text-center text-justify lg:text-center lg:text-xl">
             La idea de esto es poder almacenar todas las fotos que tengas o tengamos en una página, dandole un estilo
             personalizado. Por el momento es estático pero en un futuro quiero que tú puedas subir las fotos que quieras
-            así como crear álbumes para tenerlo más ordenado como por ejemplo estos que inventé yo.
+            así como crear álbumes para tenerlo más ordenado como por ejemplo estos que inventé.
           </div>
-          <div class="flex justify-evenly w-full">
-            <OvButton to="rosita">
-              Rosita
-            </OvButton>
-            <OvButton to="camila">
-              Camila
-            </OvButton>
-            <OvButton to="">
-              Ramona
-            </OvButton>
+          <div class="flex flex-col justify-between justify-center items-center w-full h-[150px] sm:flex-row sm:justify-evenly sm:h-auto">
+            <OvButton text="Rosita" to="rosita" />
+            <OvButton text="Camila" to="camila" />
+            <OvButton text="Ramona" disabled/>
           </div>
         </section>
       </main>

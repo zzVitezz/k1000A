@@ -2,7 +2,18 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    screens: {
+      'sm': '400px',
+      'md': '768px',
+      'lg': '1024px',
+    },
+    extend: {
+      colors: {
+        'kblue': '#283044',
+        'kgray': '#808F85',
+        'kred': '#A0153E',
+      },
+    },
   },
   plugins: [],
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],

@@ -4,10 +4,10 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
       />
-      <main class="main bg-yellow-200">
+      <main class="main bg-kblue">
         <button
           class="bg-amber-600 text-white rounded-full flex items-center p-2 z-10 fixed bottom-5 right-5
-          lg:bottom-10 lg:right-12 lg:transition lg:ease-in-out lg:delay-150 lg:hover:-translate-y-1 lg:hover:scale-110 lg:hover:bg-red-500 lg:duration-200"
+          lg:bottom-10 lg:right-12 lg:transition lg:hover:scale-110 lg:hover:bg-red-500"
           @click="modal = true"
         >
           <span class="material-symbols-outlined" style="font-size: 30px;">menu</span>
@@ -47,7 +47,7 @@
   <script setup lang="ts">
   import { onClickOutside } from "@vueuse/core";
   import {ref} from "vue";
-  import OvImageList from "../components/OvImageList.vue"
+  import OvImageList from "../components/OvImageList.vue";
 
   const camila = [
           { src: "images/k1.jpeg", caption: "Description", index: 0},
@@ -70,5 +70,4 @@
   };
   
   </script>
-  <style></style>
   

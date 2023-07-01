@@ -60,7 +60,7 @@
   </script>
   <style scoped>
   .image--list {
-    @apply min-w-full gap-5 px-5 py-10 columns-2 lg:px-10 lg:columns-3;
+    @apply min-w-full gap-5 p-5 columns-2 lg:columns-3;
   }
   .item {
     @apply relative w-full;

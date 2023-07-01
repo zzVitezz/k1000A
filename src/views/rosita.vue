@@ -83,4 +83,4 @@ const closeModal = () => {
   modal.value = false;
 };
 </script>
-<style></style>
+
