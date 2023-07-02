@@ -1,23 +1,30 @@
 import { createApp } from "vue";
-import App from "./App.vue";
-import "./index.css";
 import { createRouter, createWebHistory } from "vue-router";
-import camila from "./views/camila.vue";
-import rosita from "./views/rosita.vue";
+import "./index.css";
+import App from "./App.vue";
+import Camila from "./views/camila.vue";
+import Rosita from "./views/rosita.vue";
 import pruebas from "./views/pruebas.vue";
+import Home from "./views/Home.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    /* Sirve para poner la vista home y abajo las demás con el router-view
+    {
+      path: "/",
+      name: "Home",
+      component: Home,
+    },*/
     {
       path: "/camila",
-      name: "camila",
-      component: camila,
+      name: "Camila",
+      component: Camila,
     },
     {
       path: "/rosita",
-      name: "rosita",
-      component: rosita,
+      name: "Rosita",
+      component: Rosita,
     },
     {
       path: "/pruebas",

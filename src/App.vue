@@ -1,8 +1,6 @@
 <template>
-  <main>
-    <Home/>
-    <router-view/>
-  </main>
+  <Home/>
+  <router-view/>
 </template>
 
 <script setup>

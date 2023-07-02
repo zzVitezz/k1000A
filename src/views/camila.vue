@@ -26,10 +26,10 @@
                   <span class="material-symbols-outlined">close</span>
                 </button>
                 <div class="flex h-full flex-col items-center justify-center gap-7">
-                  <router-link to="/Home">
+                  <router-link to="/">
                     <span class="text-xl lg:hover:underline lg:decoration-amber-600 lg:decoration-2 lg:hover:underline-offset-4">Inicio</span>
                   </router-link>
-                  <router-link to="/rosita">
+                  <router-link :to="{ name: 'Rosita'}">
                     <span class="text-xl lg:hover:underline lg:decoration-amber-600 lg:decoration-2 lg:hover:underline-offset-4">Rosita</span>
                   </router-link>
                   <router-link to="">
@@ -47,7 +47,7 @@
   <script setup lang="ts">
   import { onClickOutside } from "@vueuse/core";
   import {ref} from "vue";
-  import OvImageList from "../components/OvImageList.vue";
+  import OvImageList from "../components/OvImageList.vue" ;
 
   const camila = [
           { src: "images/k1.jpeg", caption: "Description", index: 0},

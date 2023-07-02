@@ -22,7 +22,7 @@
             ref="modalRef"
             class="fixed left-1/2 top-1/2 w-fit h-fit z-40 translate-y-[-50%] translate-x-[-50%] bg-white rounded-md"
           >
-            <section class="p-5 flex justify-center">
+            <section class="p-3 flex justify-center">
               <div class="">
                 <img :src="srcImagen" class="max-h-[80vh]"/>
               </div>
@@ -60,10 +60,10 @@
   </script>
   <style scoped>
   .image--list {
-    @apply min-w-full gap-5 p-5 columns-2 lg:columns-3;
+    @apply min-w-full gap-5 px-5 pt-5 columns-2 lg:columns-3;
   }
   .item {
-    @apply relative w-full;
+    @apply relative w-full mb-5;
   }
   .item__img {
     @apply w-full;
