@@ -1,9 +1,5 @@
 <template>
     <div>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      />
       <main class="main bg-kblue">
         <button
           class="bg-amber-600 text-white rounded-full flex items-center p-2 z-10 fixed bottom-5 right-5
@@ -29,7 +25,7 @@
                   <router-link to="/">
                     <span class="text-xl lg:hover:underline lg:decoration-amber-600 lg:decoration-2 lg:hover:underline-offset-4">Inicio</span>
                   </router-link>
-                  <router-link :to="{ name: 'Rosita'}">
+                  <router-link to='/rosita'>
                     <span class="text-xl lg:hover:underline lg:decoration-amber-600 lg:decoration-2 lg:hover:underline-offset-4">Rosita</span>
                   </router-link>
                   <router-link to="">
