@@ -15,3 +15,6 @@ body {
 #app {
   width: 100vw;
 }
+main{
+  height: 100%;
+}

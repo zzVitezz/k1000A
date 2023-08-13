@@ -34,7 +34,8 @@
   </template>
   <script setup>
   import { onClickOutside } from "@vueuse/core";
-  import {onMounted, ref} from "vue";
+  import { ref } from "vue";
+  
   const props = defineProps({
     images: {
       type: Array,
