@@ -1,5 +1,7 @@
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import "./index.css";
 import App from "./App.vue";
 import camila from "./views/camila.vue";
@@ -34,3 +36,17 @@ const router = createRouter({
 });
 
 createApp(App).use(router).mount("#app");
+
+const firebaseConfig = {
+  apiKey: "AIzaSyATtYMzHI__ToxLdUCkl-eVxoHnG7hCAgM",
+  authDomain: "k1000a-gallery.firebaseapp.com",
+  projectId: "k1000a-gallery",
+  storageBucket: "k1000a-gallery.appspot.com",
+  messagingSenderId: "642060980020",
+  appId: "1:642060980020:web:eeaf157be9379392cadf61",
+  measurementId: "G-GFT0BQX627"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
