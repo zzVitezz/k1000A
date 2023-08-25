@@ -5,7 +5,7 @@
     <div
       class="flex flex-col items-center rounded-lg p-0 w-[250px] md:w-[500px] lg:w-[500px] gap-16"
     >
-      <div class="text-xl text-culqi-blue font-semibold">Inicia sesión</div>
+      <div class="text-xl text-culqi-blue font-semibold">Registrate</div>
       <div class="w-full flex flex-col gap-8">
         <OvTextField
           required
@@ -23,15 +23,6 @@
         ></OvTextField>
       </div>
       <OvButton text="Iniciar sesión" @click="her()" class="w-full" />
-      <div class="flex flex-col md:flex-row items-center">
-        <span>¿Eres nuevo aquí?</span
-        ><OvButton
-          variant="text"
-          text="Crea una cuenta"
-          href="https://afiliate.culqi.com/online/step1"
-          class="text-culqi-green ml-1"
-        ></OvButton>
-      </div>
     </div>
   </main>
 </template>

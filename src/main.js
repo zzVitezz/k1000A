@@ -2,12 +2,14 @@ import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 import "./index.css";
 import App from "./App.vue";
 import camila from "./views/camila.vue";
 import rosita from "./views/rosita.vue";
 import pruebas from "./views/pruebas.vue";
 import home from "./views/Home.vue";
+import register from "./views/register.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -32,10 +34,13 @@ const router = createRouter({
       name: "pruebas",
       component: pruebas,
     },
+    {
+      path: "/register",
+      name: "register",
+      component: register,
+    },
   ],
 });
-
-createApp(App).use(router).mount("#app");
 
 const firebaseConfig = {
   apiKey: "AIzaSyATtYMzHI__ToxLdUCkl-eVxoHnG7hCAgM",
@@ -47,6 +52,15 @@ const firebaseConfig = {
   measurementId: "G-GFT0BQX627"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+const auth = getAuth(app);
+
+createApp(App)
+  .use(router)
+  .provide("auth", auth) 
+  .mount("#app");
+
+
+

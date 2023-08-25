@@ -12,6 +12,7 @@
     "@vueuse/components": "^10.1.2",
     "@vueuse/core": "^10.1.2",
     "firebase": "^10.1.0",
+    "firebaseui": "^6.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
