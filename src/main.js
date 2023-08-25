@@ -10,12 +10,13 @@ import rosita from "./views/rosita.vue";
 import pruebas from "./views/pruebas.vue";
 import home from "./views/Home.vue";
 import register from "./views/register.vue";
+import login from "./views/login.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/",
+      path: "/home",
       name: "home",
       component: home,
     },
@@ -38,6 +39,11 @@ const router = createRouter({
       path: "/register",
       name: "register",
       component: register,
+    },
+    {
+      path: "/",
+      name: "login",
+      component: login,
     },
   ],
 });
