@@ -1,3 +1,5 @@
+import { url } from 'inspector';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [],
@@ -13,6 +15,9 @@ export default {
         'kgray': '#808F85',
         'kred': '#A0153E',
       },
+      backgroundImage: {
+        'login': "url('/images/login.jpg')",
+      }
     },
   },
   plugins: [],
