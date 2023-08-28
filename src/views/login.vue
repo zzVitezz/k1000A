@@ -1,5 +1,5 @@
 <template>
-  <main class="flex w-full h-screen lg:bg-login bg-center bg-cover">
+  <main class="flex w-full h-screen lg:bg-login">
     <div class="hidden lg:w-3/5  lg:block"></div>
     <div
       class="flex flex-col items-center justify-evenly w-full bg-white p-8 rounded-lg lg:px-16 lg:w-2/5 "

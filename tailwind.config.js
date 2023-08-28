@@ -16,7 +16,7 @@ export default {
         'kred': '#A0153E',
       },
       backgroundImage: {
-        'login': "url('/images/login.jpg')",
+        'login': "url('/images/monis.jpg')",
       }
     },
   },
