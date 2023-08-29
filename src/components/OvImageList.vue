@@ -61,7 +61,7 @@
   </script>
   <style scoped>
   .image--list {
-    @apply min-w-full gap-5 px-5 pt-5 columns-2 md:columns-3 lg:columns-4;
+    @apply min-w-full gap-5 columns-2 md:columns-3 lg:columns-4;
   }
   .item {
     @apply relative w-full mb-5;
