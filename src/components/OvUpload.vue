@@ -1,21 +1,12 @@
 <template>
-  <input
-    ref="fileInput"
-    type="file"
-    style="display: none"
-    @change="handleFileInputChange"
-  />
-  <OvButton
-    class="z-10 fixed bottom-5 right-5 lg:bottom-10 lg:right-12"
-    disableShadow
-    icon="upload"
-    text="Subir imagen"
-    variant="outline"
-    @click="openFileInput"
-  />
+  <input ref="fileInput" type="file" style="display: none" @change="handleFileInputChange" />
+  <OvButton class="z-10 fixed bottom-5 right-5 lg:bottom-10 lg:right-12" disableShadow icon="upload" text="Subir imagen"
+    variant="outline" @click="openFileInput" />
 </template>
 <script setup lang="ts">
 import OvButton from "./OvButton.vue";
+import { getStorage, ref as storageRef, uploadBytes } from 'firebase/storage';
+
 import { ref } from "vue";
 
 const fileInput = ref<HTMLInputElement | null>(null);
@@ -31,7 +22,16 @@ const handleFileInputChange = async (event) => {
   const file = target.files[0];
 
   if (file) {
-    // Aquí puedes realizar acciones con el archivo seleccionado si es necesario
+    const storage = getStorage(); // Obtén la instancia de Firebase Storage
+
+    const fileRef = storageRef(storage, `rosita/${file.name}`); // Reemplaza 'tu_carpeta' con la carpeta deseada
+
+    try {
+      await uploadBytes(fileRef, file);
+      console.log('Archivo subido con éxito.');
+    } catch (error) {
+      console.error('Error al subir el archivo:', error);
+    }
   }
 };
 </script>
