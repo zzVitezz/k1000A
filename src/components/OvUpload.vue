@@ -3,6 +3,7 @@
     ref="fileInput"
     type="file"
     style="display: none"
+    accept="image/*"
     @change="handleFileInputChange"
   />
   <OvButton
