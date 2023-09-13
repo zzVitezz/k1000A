@@ -5,10 +5,10 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import "./index.css";
 import App from "./App.vue";
-import home from "./views/Home.vue";
-import register from "./views/Register.vue";
-import login from "./views/Login.vue";
-import folderView from "./views/FolderView.vue";
+import Home from "./views/Home.vue";
+import Register from "./views/Register.vue";
+import Login from "./views/Login.vue";
+import FolderView from "./views/FolderView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,23 +16,23 @@ const router = createRouter({
     {
       path: "/home",
       name: "home",
-      component: home,
+      component: Home,
     },
     {
       path: '/folder/:folderName',
       name: 'FolderView',
-      component: folderView,
+      component: FolderView,
       props: true,
     },
     {
       path: "/register",
-      name: "Register",
-      component: register,
+      name: "register",
+      component: Register,
     },
     {
       path: "/",
-      name: "Login",
-      component: login,
+      name: "login",
+      component: Login,
     },
   ],
 });
