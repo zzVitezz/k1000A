@@ -5,10 +5,10 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import "./index.css";
 import App from "./App.vue";
-import pruebas from "./views/pruebas.vue";
+import pruebas from "./views/Pruebas.vue";
 import home from "./views/Home.vue";
-import register from "./views/register.vue";
-import login from "./views/login.vue";
+import register from "./views/Register.vue";
+import login from "./views/Login.vue";
 import folderView from "./views/FolderView.vue";
 
 const router = createRouter({
@@ -27,17 +27,17 @@ const router = createRouter({
     },
     {
       path: "/pruebas",
-      name: "pruebas",
+      name: "Pruebas",
       component: pruebas,
     },
     {
       path: "/register",
-      name: "register",
+      name: "Register",
       component: register,
     },
     {
       path: "/",
-      name: "login",
+      name: "Login",
       component: login,
     },
   ],

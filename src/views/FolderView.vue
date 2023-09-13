@@ -1,11 +1,13 @@
 <template>
-  <main class="bg-kblue px-5 pt-5">
+  <OvNavBar />
+  <main :class="getBackground()">
     <OvImageList :images="images"></OvImageList>
-    <OvUpload :folder="folderName"/>
+    <OvUpload :folder="folderName.toString()"/>
   </main>
 </template>
 
 <script setup lang="ts">
+import OvNavBar from "../components/OvNavBar.vue";
 import OvImageList from "../components/OvImageList.vue";
 import OvUpload from "../components/OvUpload.vue";
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
@@ -18,7 +20,14 @@ const images = reactive([]);
 
 const routeParams = router.currentRoute.value.params;
 const folderName = routeParams.folderName;
-const folderRef = ref(storage, folderName);
+const folderRef = ref(storage, folderName.toString());
+
+const getBackground = () =>{
+  if(folderName.toString() == 'rosita')
+    return 'bg-kyellow'
+  else
+    return 'bg-kblue'
+}
 
 listAll(folderRef)
   .then((result) => {

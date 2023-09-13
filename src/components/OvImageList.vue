@@ -6,7 +6,7 @@
         @click="obtenerSrcImagen(image.index)"
       >
         <div class="item__img">
-          <img ref="imagen" :src="image.src" class="w-full"/>
+          <img ref="imagen" :src="image.src" class="w-full rounded-lg"/>
         </div>
         <div class="item__label">
           <span> {{ image.caption }} </span>
@@ -61,16 +61,16 @@
   </script>
   <style scoped>
   .image--list {
-    @apply min-w-full gap-5 columns-2 md:columns-3 lg:columns-4;
+    @apply min-w-full gap-3 columns-2 px-3 pt-3 md:columns-3 lg:columns-4 lg:gap-5 lg:px-5 lg:pt-5;
   }
   .item {
-    @apply relative w-full mb-5;
+    @apply relative w-full mb-3 lg:mb-5;
   }
   .item__img {
     @apply w-full;
   }
   .item__label {
-    @apply hidden lg:absolute lg:bottom-0 lg:text-white lg:w-full lg:p-3 lg:flex lg:justify-between;
+    @apply hidden rounded-b-lg lg:absolute lg:bottom-0 lg:text-white lg:w-full lg:p-2 lg:flex lg:justify-between;
     background-color: rgba(0, 0, 0, 0.7);
   }
   .item:hover .item__label {

@@ -11,9 +11,11 @@ export default {
     },
     extend: {
       colors: {
-        'kblue': '#283044',
-        'kgray': '#808F85',
+        'kblue': '#035397',
         'kred': '#A0153E',
+        'kyellow': '#FCD900',
+        'kblack': '#303841',
+        'kwhite': '#EEEEEE'
       },
       backgroundImage: {
         'login': "url('/images/monis.jpg')",

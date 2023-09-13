@@ -13,21 +13,21 @@
             ></video>
           </div>
           <div class="absolute h-full w-full top-0 left-0 bg-black bg-opacity-40"></div>
-          <div class="z-0 flex flex-col items-center">
-            <div class="text-xl text-white flex lg:text-5xl">Feliz Cumpleaños</div>
-            <span class="text-sm text-white mt-5">Más de 1 año juntos</span>
+          <div class="z-0 flex flex-col items-center text-kwhite">
+            <div class="text-x flex lg:text-5xl">Feliz Cumpleaños</div>
+            <span class="text-sm mt-5">Más de 1 año juntos</span>
           </div>
         </section>
-        <section class="flex flex-col px-8 justify-evenly items-center h-screen w-full lg:px-32">
+        <section class="flex flex-col px-8 justify-evenly items-center text-kblack h-screen w-full lg:px-32">
           <div class="text-xl text-center font-semibold lg:text-3xl">
             ¡Bienvenida a nuestra galería personalizada!
           </div>
-          <div class="text-sm text-center lg:text-center lg:text-xl">
+          <div class="text-sm text-center lg:text-xl">
             La idea de esto es poder almacenar todas las fotos que tengas o tengamos en una página, dandole un estilo
             personalizado. Por el momento es estático pero en un futuro quiero que tú puedas subir las fotos que quieras
             así como crear álbumes para tenerlo más ordenado como por ejemplo estos que inventé.
           </div>
-          <div class="flex flex-col justify-center items-center w-full h-[150px] sm:flex-row sm:justify-evenly sm:h-auto">
+          <div class="flex flex-col gap-5 justify-center items-center w-full lg:flex-row lg:gap-20">
             <OvButton text="Rosita" to="/folder/rosita" />
             <OvButton text="Camila" to="/folder/camila" />
             <OvButton text="Ramona" disabled/>

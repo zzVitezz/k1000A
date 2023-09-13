@@ -58,7 +58,7 @@ const component = computed(() => {
 </script>
 <style scoped>
 .ov-btn {
-  @apply rounded-md w-fit shadow-md shadow-slate-300 font-semibold flex items-center;
+  @apply rounded-md w-fit shadow-md shadow-slate-300 flex items-center justify-center min-w-[100px];
 }
 .ov-btn--sm {
   @apply px-2 py-1 text-sm;
@@ -70,7 +70,7 @@ const component = computed(() => {
   @apply px-4 py-2 text-lg;
 }
 .ov-btn--default {
-  @apply bg-amber-600 text-white 
+  @apply bg-amber-600 text-kwhite 
   transition hover:scale-105 hover:bg-kred;
 }
 .ov-btn--default:disabled {
@@ -78,7 +78,7 @@ const component = computed(() => {
   hover:scale-100 !important;
 }
 .ov-btn--outline {
-  @apply outline bg-white outline-amber-600 text-amber-600 outline-2 
+  @apply outline bg-kwhite outline-amber-600 text-amber-600 outline-2 
   transition hover:scale-110 hover:outline-kred hover:text-kred hover:bg-rose-50;
 }
 .ov-btn--outline:disabled {
