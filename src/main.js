@@ -5,12 +5,11 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import "./index.css";
 import App from "./App.vue";
-import camila from "./views/camila.vue";
-import rosita from "./views/rosita.vue";
 import pruebas from "./views/pruebas.vue";
 import home from "./views/Home.vue";
 import register from "./views/register.vue";
 import login from "./views/login.vue";
+import folderView from "./views/FolderView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -21,14 +20,10 @@ const router = createRouter({
       component: home,
     },
     {
-      path: "/camila",
-      name: "camila",
-      component: camila,
-    },
-    {
-      path: "/rosita",
-      name: "rosita",
-      component: rosita,
+      path: '/folder/:folderName',
+      name: 'FolderView',
+      component: folderView,
+      props: true,
     },
     {
       path: "/pruebas",

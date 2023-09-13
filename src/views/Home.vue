@@ -28,8 +28,8 @@
             así como crear álbumes para tenerlo más ordenado como por ejemplo estos que inventé.
           </div>
           <div class="flex flex-col justify-center items-center w-full h-[150px] sm:flex-row sm:justify-evenly sm:h-auto">
-            <OvButton text="Rosita" to="rosita" />
-            <OvButton text="Camila" to="camila" />
+            <OvButton text="Rosita" to="/folder/rosita" />
+            <OvButton text="Camila" to="/folder/camila" />
             <OvButton text="Ramona" disabled/>
           </div>
         </section>
