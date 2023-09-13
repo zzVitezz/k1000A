@@ -5,7 +5,6 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import "./index.css";
 import App from "./App.vue";
-import pruebas from "./views/Pruebas.vue";
 import home from "./views/Home.vue";
 import register from "./views/Register.vue";
 import login from "./views/Login.vue";
@@ -24,11 +23,6 @@ const router = createRouter({
       name: 'FolderView',
       component: folderView,
       props: true,
-    },
-    {
-      path: "/pruebas",
-      name: "Pruebas",
-      component: pruebas,
     },
     {
       path: "/register",
