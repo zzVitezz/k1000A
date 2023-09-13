@@ -1,9 +1,11 @@
 <template>
-  <OvNavBar />
-  <main :class="getBackground()">
-    <OvImageList :images="images"></OvImageList>
-    <OvUpload :folder="folderName.toString()"/>
-  </main>
+  <section>
+    <OvNavBar />
+    <main :class="getBackground()">
+      <OvImageList :images="images"></OvImageList>
+      <OvUpload :folder="folderName.toString()" />
+    </main>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -20,14 +22,12 @@ const images = reactive([]);
 
 const routeParams = router.currentRoute.value.params;
 const folderName = routeParams.folderName;
-const folderRef = ref(storage, folderName.toString());
+const folderRef = ref(storage, folderName);
 
-const getBackground = () =>{
-  if(folderName.toString() == 'rosita')
-    return 'bg-kyellow'
-  else
-    return 'bg-kblue'
-}
+const getBackground = () => {
+  if (folderName == "rosita") return "bg-kyellow";
+  else return "bg-kblue";
+};
 
 listAll(folderRef)
   .then((result) => {
